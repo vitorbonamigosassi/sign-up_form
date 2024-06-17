@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+}
+
+#image {
+    background-image: url(../img/cosmos.jpg);
+    width: 50vw;
+    display: flex;
+}
+
+#main {
+    background-color: antiquewhite;
+    padding: 40px;
+}
+
+#formContainer {
+    background-color: aliceblue;
+    padding: 40px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 20%;
+}
