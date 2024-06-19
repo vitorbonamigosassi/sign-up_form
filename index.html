@@ -9,43 +9,46 @@
 </head>
 
 <body>
-    <section id="container">
-        <header>
-            <img src="img/logo.png" alt="Logo.">
-            <h1>My fancy name</h1>
-        </header>
-        <div id="main">
-            <h1>Super captivating text to induce you into filling out my form and expanding your consciousness.</h2>
-                <p><em>Be a member now!</em></p>
-                <div id="formContainer">
-                    <h2>Let's do this!</h2>
-                    <form method="post" action="#">
+    <header>
+        <img id="logo" src="img/cosmos.jpg" alt="Logo." width="120px" height="120px">
+        <span>Elevated Inc.</span>
+    </header>
+    <div id="main">
+        <h1>Super captivating text to induce you into filling out my form and expanding your consciousness.</h2>
+            <p><em>Be a member now!</em></p>
+            <div id="formContainer">
+                <h2>Let's do this!</h2>
+                <form method="post" action="#">
+                    <label>First Name<br>
+                        <input type="text" name="firstName" required>
+                    </label>
 
-                        <label for="firstName">First Name</label><br>
-                        <input type="text" id="firstName" name="firstName"><br>
+                    <label>Last Name<br>
+                        <input type="text" name="lastName">
+                    </label>
 
-                        <label for="lastName">Last Name</label><br>
-                        <input type="text" id="lastName" name="lastName"><br>
+                    <label>Email<br>
+                        <input type="text" name="email" required>
+                    </label>
 
-                        <label for="email">Email</label><br>
-                        <input type="text" id="email" name="email"><br>
+                    <label>Phone Number<br>
+                        <input type="tel" name="phoneNumber">
+                    </label>
 
-                        <label for="phoneNumber">Phone Number</label><br>
-                        <input type="tel" id="phoneNumber" name="phoneNumber"><br>
+                    <label>Password<br>
+                        <input type="password" name="password" required>
+                    </label>
+                    
+                    <label>Confirm Password<br>
+                        <input type="password" name="confPassword" required>
+                    </label>
+                    <input type="submit">
+                </form>
+            </div>
 
-                        <label for="password">Password</label><br>
-                        <input type="password" id="password" name="password"><br>
+            <p>Already have an account? <a href="#">Log in</a></p>
 
-                        <label for="confPassword">Confirm Password</label><br>
-                        <input type="password" id="confPassword" name="confPassword"><br>
-                    </form>
-                </div>
-
-                <button>Create Account</button>
-                <p>Already have an account? <a href="#">Log in</a></p>
-
-        </div>
-    </section>
+    </div>
 </body>
 
 </html>
