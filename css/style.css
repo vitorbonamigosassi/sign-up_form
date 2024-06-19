@@ -2,31 +2,74 @@
     box-sizing: border-box;
 }
 
-#container {
+html {
+    font-size: 14px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+body{
+    color: hsl(213, 27%, 8%);
     display: flex;
+    background: url(../img/cosmos.jpg) antiquewhite center;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
 }
 
-#image {
-    background-image: url(../img/cosmos.jpg);
-    width: 50vw;
-    display: flex;
+header {
+    padding: 120px 10px 10px 10px;
+    text-wrap: nowrap;
+    text-align: center;
+    width: 240px;
+    background-color: hsla(0, 0%, 100%, 0.9);
+    box-shadow: 2px 0 20px hsla(213, 27%, 8%, 0.4);
+    font-size: 18px;
+    font-weight: bold;
 }
 
-#main {
-    background-color: antiquewhite;
-    padding: 40px;
-}
-
-#formContainer {
-    background-color: aliceblue;
-    padding: 40px;
+header img {
+    border-radius: 50%;
 }
 
 form {
     display: flex;
     flex-wrap: wrap;
+    gap: 16px
 }
 
-input {
-    width: 20%;
+input[type="submit"] {
+    padding: 8px 12px 8px 12px;
+    background-color: hsl(36, 49%, 50%);
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+input[type="submit"]:hover {
+    background-color: hsl(36, 49%, 55%);
+    border-color: hsl(36, 49%, 40%);
+    cursor: pointer;
+}
+
+input[type="submit"]:active {
+    background-color: hsl(36, 49%, 50%);
+    border-color: none;
+}
+
+a {
+    color: hsl(36, 49%, 45%);
+}
+
+#main {
+    margin: 40px 240px 40px 40px;
+    background-color: hsla(0, 0%, 100%, 0.9);
+    padding: 40px;
+    border-radius: 8px;
+    min-width: 450px;
+    max-width: 650px;
+}
+
+#formContainer {
+    background-color: hsl(0, 0%, 90%);
+    padding: 40px;
+    border-radius: 4px;
 }
